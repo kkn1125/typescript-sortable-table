@@ -1,5 +1,6 @@
 {
   "name": "prac02",
+  "homepage": "https://kkn1125.github.io/typescript-sortable-table",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
