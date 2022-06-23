@@ -5,8 +5,14 @@ const Span = styled.span`
   color: ${(props: { sort: boolean }) => (props.sort ? "cadetblue" : "tomato")};
 `;
 
-function Order({ sort }: { sort: boolean }) {
-  return <Span sort={sort}>{sort ? "⬆" : "⬇"}</Span>;
+type OrderProps = {
+  sort: boolean;
+  ascIcon: string;
+  descIcon: string;
+};
+
+function Order({ sort, ascIcon, descIcon }: OrderProps) {
+  return <Span sort={sort}>{sort ? ascIcon : descIcon}</Span>;
 }
 
 export default Order;
